@@ -11,11 +11,13 @@ export class AzLogin implements ICommand {
     async exec(ctx: ITaskContext): Promise<CommandResponse>{
         const options = await new RunWithAzCli("login").build();
         if(ctx.backendServiceArm){
+            console.log("Adding env variables for az login connection"); 
             options.addArgs(
                 "--service-principal", 
                 "-t", ctx.backendServiceArmTenantId,
                 "-u", ctx.backendServiceArmClientId,
-                "-p", ctx.backendServiceArmClientSecret
+                "-p=" + ctx.backendServiceArmClientSecret
+                // "--password="+ctx.backendServiceArmClientSecret
             );
         }
         else{
@@ -23,7 +25,8 @@ export class AzLogin implements ICommand {
                 "--service-principal", 
                 "-t", ctx.environmentServiceArmTenantId,
                 "-u", ctx.environmentServiceArmClientId,
-                "-p", ctx.environmentServiceArmClientSecret
+                "-p=" + ctx.environmentServiceArmClientSecret
+                // "--password="+ctx.backendServiceArmClientSecret
             );
         }
         

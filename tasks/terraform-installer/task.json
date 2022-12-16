@@ -1,9 +1,9 @@
 {
-  "id": "11645770-d18e-11e8-8f5b-1b8b62612b3b",
-  "name": "TerraformInstaller",
+  "id": "11645770-d18e-11e8-8f5b-1b8b66212b3b",
+  "name": "TerraformInstallerAware",
   "friendlyName": "Terraform Installer",
   "description": "Installs a specific version of terraform",
-  "author": "Charles Zipp",
+  "author": "WeAreRetail",
   "helpMarkDown": "",
   "category": "Utility",
   "visibility": [
@@ -12,9 +12,9 @@
   ],
   "demands": [],
   "version": {
-    "Major": "#{GitVersion.Major}#",
-    "Minor": "#{GitVersion.Minor}#",
-    "Patch": "#{GitVersion.Patch}#"
+    "Major": "0",
+    "Minor": "7",
+    "Patch": "8"
   },
   "minimumAgentVersion": "1.95.0",
   "instanceNameFormat": "Use Terraform $(terraformVersion)",

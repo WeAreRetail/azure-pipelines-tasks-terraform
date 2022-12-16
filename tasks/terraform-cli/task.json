@@ -1,9 +1,9 @@
 {
-    "id": "721c3f90-d938-11e8-9d92-09d7594721b5",
-    "name": "TerraformCLI",
+    "id": "721c3f90-d938-11e8-9d92-09d7954721b5",
+    "name": "TerraformCLIAware",
     "friendlyName": "Terraform CLI",
     "description": "Execute terraform cli commands",
-    "author": "Charles Zipp",
+    "author": "WeAreRetail",
     "helpMarkDown": "",
     "category": "Utility",
     "visibility": [
@@ -12,9 +12,9 @@
     ],
     "demands": [],
     "version": {
-        "Major": "#{GitVersion.Major}#",
-        "Minor": "#{GitVersion.Minor}#",
-        "Patch": "#{GitVersion.Patch}#"
+        "Major": "0",
+        "Minor": "7",
+        "Patch": "8"
     },
     "minimumAgentVersion": "1.95.0",
     "instanceNameFormat": "terraform $(command)",

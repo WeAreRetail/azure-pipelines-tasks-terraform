@@ -1,7 +1,7 @@
 {
     "manifestVersion": 1,
-    "version": "0.4.14",
-    "publisher": "charleszipp",
+    "version": "0.4.17",
+    "publisher": "WeAreRetail",
     "targets": [{
         "id": "Microsoft.VisualStudio.Services"
     }],
@@ -13,8 +13,8 @@
         "default": "vss-extension-icon.png"
     },
     "files": [
-        { "path": "tasks/terraform-cli/.dist", "packagePath": "TerraformCLI" },
-        { "path": "tasks/terraform-installer/.dist", "packagePath": "TerraformInstaller" },
+        { "path": "tasks/terraform-cli/.dist", "packagePath": "TerraformCLIAware" },
+        { "path": "tasks/terraform-installer/.dist", "packagePath": "TerraformInstallerAware" },
         { "path": "views/terraform-plan/.dist", "addressable": true}
     ],
     "repository" : {
@@ -72,9 +72,9 @@
                 "ms.vss-distributed-task.tasks"
             ],
             "properties": {
-                "name": "TerraformCLI",
+                "name": "TerraformCLIAware",
                 "supportsTasks": [
-                    "721c3f90-d938-11e8-9d92-09d7594721b5"
+                    "721c3f90-d938-11e8-9d92-09d7954721b5"
                 ]
             }
         },
@@ -85,9 +85,9 @@
                 "ms.vss-distributed-task.tasks"
             ],
             "properties": {
-                "name": "TerraformInstaller",
+                "name": "TerraformInstallerAware",
                 "supportsTasks": [
-                    "11645770-d18e-11e8-8f5b-1b8b62612b3b"
+                    "11645770-d18e-11e8-8f5b-1b8b66212b3b"
                 ]
             }
         }
